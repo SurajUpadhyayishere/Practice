@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography,forms,aspect-ratio,line-clamp"></script>
+<script>
+  tailwind.config = {
+    plugins: [window.daisyui],
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/daisyui@latest"></script>
+</head>
+<body class="bg-base-200 text-base-content">
+    <header class="navbar bg-blue-400 text-white  shadow-lg sticky  top-0 z-50">
+       <nav class="flex flew-row flew-direction">
+            <div class="navbar-start">
+                <a class="btn btn-ghost normal-case text-xl">Home</a>
+            </div>
+            <div class="navbar-center">
+                <ul class="menu menu-horizontal p-0">
+                    <li><a href="./About.html">About</a></li>
+                    <li><a href="./Service.html">Services</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <button class="btn btn-primary">Login</button>
+            </div>  
+       </nav>
+    </header>
+    <div>
+
+    </div>
+</body>
+</html>
