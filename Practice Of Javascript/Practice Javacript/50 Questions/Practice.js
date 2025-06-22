@@ -1,58 +1,100 @@
 
-//Question 1
-console.log("Suraj Upadhyay","My Favorite Hobby is Travelling")  //  Suraj Upadhyay My Favorite hobby is Travelling
+// //Question 1
+// console.log("Suraj Upadhyay","My Favorite Hobby is Travelling")  //  Suraj Upadhyay My Favorite hobby is Travelling
 
 
-//Question 2
-console.log((45*2)-10)  //80
+// //Question 2
+// console.log((45*2)-10)  //80
 
-//Question 3
-const dt = new Date()
-console.log(dt.getFullYear())  //2025       getFullYear() =  Dynamic Function , getFullYear = Static Function
+// //Question 3
+// const dt = new Date()
+// console.log(dt.getFullYear())  //2025       getFullYear() =  Dynamic Function , getFullYear = Static Function
 
-//Question  4
-let firstName  =  "Suraj"
-let lastName = "Upadhyay"
-let fullName =  firstName + ''  + lastName
-console.log(fullName)  //Suraj Upadhyay
+// //Question  4
+// let firstName  =  "Suraj"
+// let lastName = "Upadhyay"
+// let fullName =  firstName + ''  + lastName
+// console.log(fullName)  //Suraj Upadhyay
 
-//Question 5
-let num  =  78
-console.log(num) //78
-num  =  45
-console.log(num)  //45
-
-
-//Question 6
-console.error("Errro Occur")
+// //Question 5
+// let num  =  78
+// console.log(num) //78
+// num  =  45
+// console.log(num)  //45
 
 
-//Question 7
-let squareSide = 12;
-console.log(squareSide ** 2) //144
+// //Question 6
+// console.error("Errro Occur")
 
-//Question 8
-let NUM  = 12;
-let character = "a"
-let  word =  "suraj"
-let bool = true
-let  floating = 45.23
 
-console.log(typeof NUM)   //number
-console.log(typeof character) //char
-console.log(typeof word) //string
-console.log(typeof bool)  // boolean
-console.log(typeof floating)   //float
+// //Question 7
+// let squareSide = 12;
+// console.log(squareSide ** 2) //144
 
-//Question 9 
+// //Question 8
+// let NUM  = 12;
+// let character = "a"
+// let  word =  "suraj"
+// let bool = true
+// let  floating = 45.23
 
-let age = 17;
-let message = age >=18 ?  "Adult" : "Not Adult";
-console.log(message)  //Not Adult
+// console.log(typeof NUM)   //number
+// console.log(typeof character) //char
+// console.log(typeof word) //string
+// console.log(typeof bool)  // boolean
+// console.log(typeof floating)   //float
 
-//Question 10
+// //Question 9 
 
-console.log(100/0)  //error
+// let age = 17;
+// let message = age >=18 ?  "Adult" : "Not Adult";
+// console.log(message)  //Not Adult
 
-// Part2: Variable and Data Types (10  Questions)
+// //Question 10
 
+// console.log(100/0)  //error
+
+// // Part2: Variable and Data Types (10  Questions)
+
+
+//what is the function declaration
+
+// function Square(side){
+//   return side  * side;
+// }
+
+// // what  is the function expression   - Anonymous Fucntion
+
+// const Square =  function(side){
+//   return  side * side;
+// }
+
+// What is the first class functions
+//Treat like a variable  , can be store inside a function
+
+// Q what is IIFE
+
+// (function userName(name){
+//     console.log(`Hello,${name} How are you`)
+// })("Alex");
+
+
+//function hoisting
+
+// greet("Alex");
+
+// function  greet(user){
+//     const userName  = user.toLowerCase()
+//     console.log(`The user name is ${userName}`)
+// }
+
+//Rest and Spread Operator
+
+// function Sum(...nums){
+//     console.log(nums[0]*nums[1])
+// }
+
+// var arg  = [2,3]
+// Sum(...arg)
+
+ 
