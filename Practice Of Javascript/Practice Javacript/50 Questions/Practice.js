@@ -46,11 +46,13 @@ console.log(typeof floating)   //float
 
 //Question 9 
 
-// let age =  17
-// if(age >= 18){
-//     console.log("You are eligible for vote")
-// } else{
-//     console.log("You are not eligible for vote")
-// }
+let age = 17;
+let message = age >=18 ?  "Adult" : "Not Adult";
+console.log(message)  //Not Adult
 
 //Question 10
+
+console.log(100/0)  //error
+
+// Part2: Variable and Data Types (10  Questions)
+
