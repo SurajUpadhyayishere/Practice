@@ -315,13 +315,10 @@ Given an array of strings, return their lengths.
 //   }
 // }
 
-
 // const accountOne = new BankAccount(342234)
 // const accountSecond =  new  BankAccount(332)
 // console.log(accountOne.withdraw(235452))
 // console.log(BankAccount.compareBalance(accountOne,accountSecond))
-
-
 
 // class Employee {
 //     constructor(name,work,workID) {
@@ -340,9 +337,9 @@ Given an array of strings, return their lengths.
 //         super(name,work,workID)
 //         this.group = group
 //         this.task = task
-//         this.deadline =  deadline 
+//         this.deadline =  deadline
 //     }
-    
+
 //     getDetail(){
 //         return `the employee  ${this.name} do ${this.work} have work id ${this.workID} .${this.name} is member of ${this.group} especially doing ${this.task} given deadline  of  ${this.deadline}`
 //     }
@@ -354,7 +351,7 @@ Given an array of strings, return their lengths.
 //Base  / Parent Class
 // class Animal{
 //     constructor(sound){
-//     this.sound =  sound    
+//     this.sound =  sound
 //     }
 
 //     makeSound(){
@@ -382,7 +379,6 @@ Given an array of strings, return their lengths.
 //     }
 // }
 
-
 // const whatDog = new Dog('Boo')
 // console.log(whatDog.makeSound())
 
@@ -406,39 +402,114 @@ Composition ,Aggregation,Interface (Duck Typing)
 -->Accept any object with log() method
  */
 
-class Book{
-    constructor(title,author,year){
-      this.title = title
-      this.author = author
-      this.year  = year  
-    }
+// class Book{
+//     constructor(title,author,year){
+//       this.title = title
+//       this.author = author
+//       this.year  = year
+//     }
 
-    display(){
-        return `${this.title}  by ${this.author} ${this.year}`
-    }
+//     display(){
+//         return `${this.title}  by ${this.author} ${this.year}`
+//     }
+// }
+
+// class Library{
+//     constructor(){
+//         this.books  = []
+//     }
+
+//     addBook(){
+//         if(typeof  book.display === "function"){
+//             this.books.push(book);
+//         } else{
+//             console.warn("Object must implement display() method.")
+//         }
+//     }
+
+//     listBooks(){
+//         if (this.books.length   ===  0){
+//             console.log("No books in the library")
+//         } else{
+//             console.log("Library Books:");
+//             this.books.forEach((book,index) =>{
+//                 console.log(`${index +  1}. ${book.display}`)
+//             })
+//         }
+//     }
+// }
+
+// Asynchronous and  Synchronous
+
+// function name(callBack) {
+//     setTimeout(() => {
+//         console.log("Hello  World")
+//     }, 1000);
+
+// }
+
+// for (let i = 0; i < 5; i++) {
+//     console.log(`Loop ${i}`)
+// }
+
+// setTimeout(() => {
+//     for (let i = 0; i <    5; i++) {
+//         console.log(`Create  ${i}`)
+
+//     }
+//     i * 1000
+// } );
+
+//simulate the delay with setTimeout callback
+
+// function delay(ms,callback){
+//     setTimeout(callback,ms);
+// }
+
+// console.log("Start")
+
+// delay(2000,() =>{
+//     console.log("Print")
+// })
+
+// console.log("End")
+
+// Synchronous  Loop
+
+// function synchloop() {
+//     for (let i = 0; i < 5; i++) {
+//         console.log(i)
+//     }
+//     console.log("Synchronous loop complete")
+// }
+
+// synchloop()
+
+
+function task1(next) {
+  setTimeout(() => {
+    console.log("Task 1 done");
+    next();
+  }, 1000);
 }
 
-class Library{
-    constructor(){
-        this.books  = []
-    }
+function task2(next) {
+  setTimeout(() => {
+    console.log("Task 2 done");
+    next();
+  }, 1500);
+}
 
-    addBook(){
-        if(typeof  book.display === "function"){
-            this.books.push(book);
-        } else{
-            console.warn("Object must implement display() method.")
-        }
-    }
+function task3(next) {
+  setTimeout(() => {
+    console.log("Task 3 done");
+    next();
+  }, 500);
+}
 
-    listBooks(){
-        if (this.books.length   ===  0){
-            console.log("No books in the library")
-        } else{
-            console.log("Library Books:");
-            this.books.forEach((book,index) =>{
-                console.log(`${index +  1}. ${book.display}`)
-            })
-        }
-    }
+
+function runInSequence(tasks) {
+   function runNext() {
+    
+   }
 }
